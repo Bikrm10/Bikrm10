@@ -3,131 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <title>My Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 10px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            text-align: center;
-            margin: 10px;
-            
-        }
-        footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            display: inline-block;
-        }
-        /* CSS for social media icons */
-        .social-icon {
-            margin: 0 5px;
-            color: #333; /* Change color as needed */
-            font-size: 24px; /* Change size as needed */
-            transition: color 0.3s ease;
-        }
-
-        .social-icon:hover {
-            color: #4267B2; /* Change color on hover */
-        }
-    </style>
+    <title>John Doe - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Webpage</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
+        <div class="navbar">
+            <div class="logo">JD</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#lifestyle">Lifestyle</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>I am freshly graduated  Enginnering student from Tribhuwan University . I have completed four years of
-            engineering course in Computer Science and exploring more to find great knowledge in this relevant 
-            subject in my near future.
-        </p>
+
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="/api/placeholder/400/400" alt="John Doe">
+                </div>
+                <div class="hero-text">
+                    <h1>Hello, I'm <span>John Doe</span></h1>
+                    <h2>Software Developer & Designer</h2>
+                    <p>I create elegant solutions to complex problems through code and design.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#projects" class="btn secondary-btn">View My Work</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>My Portfolio</h2>
-        <p>Without involving in real projects , I have done several projects myself to polish my knowledge in 
-            software development course , Deep learning , Machine learning course, Java Programing and app development
-            project within these four years.
-            I have provide my github link below :
-            <br>
-            <a href="https://github.com/Bikrm10">Github</a>
-        </p>
+
+    <section class="about-details" id="about-details">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate software developer with over 5 years of experience creating web and mobile applications. My journey in technology began with a curiosity about how things work and evolved into a career building digital experiences that solve real problems.</p>
+                    <p>With expertise in multiple programming languages and frameworks, I enjoy tackling challenges that push my creative and technical abilities. When I'm not coding, you can find me hiking mountains, reading science fiction, or experimenting with new cooking recipes.</p>
+                    <p>I believe in continuous learning and growth, both professionally and personally. This website serves as a portfolio of my work and a platform to share my thoughts on technology, design, and life.</p>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>UI/UX Design</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Contact Me</h2>
-        <p>You can find me in different social media and platforms.
-             Here are  the link to my social account
-             <br>
-            <a href="https://www.facebook.com/bikram.karki.7773631">Facebook</a>
-            <br>
-            <a href="https://www.instagram.com/bikramk_arkii/">Instagram</a>
-            <br>
-            <a href="https://www.linkedin.com/in/bikram-karki-599a95189/">LinkedIn</a>
-        </p>
+
+    <section class="resume" id="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-download">
+                <a href="#" class="btn primary-btn"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2015 - 2019</div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Science in Computer Science</h4>
+                                <p>Stanford University</p>
+                                <p>Graduated with honors. Focus on software engineering and artificial intelligence.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <div class="timeline-content">
+                                <h4>Master of Science in Software Engineering</h4>
+                                <p>MIT</p>
+                                <p>Thesis on "Improving User Experience Through Predictive Algorithms"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Certifications</h3>
+                    <div class="certifications">
+                        <div class="cert-item">
+                            <h4>AWS Certified Solutions Architect</h4>
+                            <p>Amazon Web Services, 2022</p>
+                        </div>
+                        <div class="cert-item">
+                            <h4>Google Cloud Professional Developer</h4>
+                            <p>Google Cloud, 2021</p>
+                        </div>
+                        <div class="cert-item">
+                            <h4>Certified Scrum Master</h4>
+                            <p>Scrum Alliance, 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h4>Senior Software Engineer</h4>
+                        <p>Tech Innovations Inc.</p>
+                        <ul>
+                            <li>Lead a team of 5 developers in building a cloud-based analytics platform</li>
+                            <li>Implemented microservices architecture reducing system latency by 40%</li>
+                            <li>Collaborated with UX team to redesign core product features</li>
+                            <li>Mentored junior developers through knowledge sharing sessions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-content">
+                        <h4>Full Stack Developer</h4>
+                        <p>Digital Solutions Co.</p>
+                        <ul>
+                            <li>Developed and maintained client-facing web applications using React</li>
+                            <li>Built RESTful APIs using Node.js and Express</li>
+                            <li>Increased application performance by 35% through code optimization</li>
+                            <li>Participated in agile development cycles with weekly sprints</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2019</div>
+                    <div class="timeline-content">
+                        <h4>Junior Web Developer</h4>
+                        <p>Creative Web Agency</p>
+                        <ul>
+                            <li>Created responsive websites for small and medium-sized businesses</li>
+                            <li>Implemented SEO best practices across client websites</li>
+                            <li>Collaborated with designers to ensure pixel-perfect implementations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-featured online store built with React, Node.js, and MongoDB.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="Fitness Tracker App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile application for tracking workouts and nutrition using React Native.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="Brand Identity Design">
+                    </div>
+                    <div class="project-info">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity package for a sustainable fashion startup.</p>
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Logo Design</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="Analytics Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Interactive data visualization dashboard for marketing metrics.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lifestyle" id="lifestyle">
+        <div class="container">
+            <h2 class="section-title">Lifestyle</h2>
+            <div class="lifestyle-content">
+                <div class="lifestyle-text">
+                    <p>Beyond my professional life, I believe in maintaining a balanced lifestyle that nurtures my creativity and well-being. Here are some aspects of my life outside of work:</p>
+                </div>
+                <div class="lifestyle-grid">
+                    <div class="lifestyle-card">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <h3>Outdoor Adventures</h3>
+                        <p>I'm an avid hiker and have explored trails across three continents. Being in nature helps me clear my mind and find fresh perspectives.</p>
+                    </div>
+                    <div class="lifestyle-card">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Reading</h3>
+                        <p>I'm a voracious reader of science fiction, philosophy, and technical books. Reading expands my imagination and keeps me learning.</p>
+                    </div>
+                    <div class="lifestyle-card">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Cooking</h3>
+                        <p>Experimenting in the kitchen is my creative outlet. I love exploring cuisines from around the world and hosting dinner parties for friends.</p>
+                    </div>
+                    <div class="lifestyle-card">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Photography</h3>
+                        <p>Capturing moments through photography helps me see the world in new ways. I particularly enjoy landscape and street photography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-intro">
+                <p>Welcome to my blog where I share thoughts on technology, design, and personal growth. Feel free to explore articles below.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Blog Post 1">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">April 1, 2025</div>
+                        <h3>The Future of Web Development in 2025</h3>
+                        <p>Exploring emerging trends and technologies shaping the future of web development...</p>
+                        <a href="blog-post.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Blog Post 2">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">March 15, 2025</div>
+                        <h3>Designing for Accessibility: Best Practices</h3>
+                        <p>How to create inclusive digital experiences that work for everyone...</p>
+                        <a href="blog-post.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Blog Post 3">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">February 28, 2025</div>
+                        <h3>My Journey from Junior to Senior Developer</h3>
+                        <p>Lessons learned and advice for developers looking to advance their careers...</p>
+                        <a href="blog-post.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="blog.html" class="btn primary-btn">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>hello@johndoe.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>San Francisco, CA</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>Follow me on:</p>
-        <a href="https://www.facebook.com/bikram.karki.7773631" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-    
-        <a href="https://www.instagram.com/bikramk_arkii/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <!-- Add more social media icons as needed -->
-        <p>&copy; 2024 Bikram Karki</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">JD</div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#lifestyle">Lifestyle</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
-<script>
-    let lastScrollTop = 0;
-
-    window.addEventListener("scroll", function() {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        if (currentScroll > lastScrollTop) {
-            // Scrolling down
-            document.getElementById("footer").style.display = "block";
-        } else {
-            // Scrolling up
-            document.getElementById("footer").style.display = "none";
-        }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    }, false);
-</script>
-
 </html>
